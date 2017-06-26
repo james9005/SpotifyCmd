@@ -1,0 +1,10 @@
+C:\Users\James\Documents\code\SPOTCMD\SPOTCMD\SPOTCMD\bin\Debug\SPOTCMD.exe.config
+C:\Users\James\Documents\code\SPOTCMD\SPOTCMD\SPOTCMD\bin\Debug\SPOTCMD.exe
+C:\Users\James\Documents\code\SPOTCMD\SPOTCMD\SPOTCMD\bin\Debug\SPOTCMD.pdb
+C:\Users\James\Documents\code\SPOTCMD\SPOTCMD\SPOTCMD\bin\Debug\Newtonsoft.Json.dll
+C:\Users\James\Documents\code\SPOTCMD\SPOTCMD\SPOTCMD\bin\Debug\SpotifyAPI.dll
+C:\Users\James\Documents\code\SPOTCMD\SPOTCMD\SPOTCMD\bin\Debug\Newtonsoft.Json.xml
+C:\Users\James\Documents\code\SPOTCMD\SPOTCMD\SPOTCMD\bin\Debug\SpotifyAPI.xml
+C:\Users\James\Documents\code\SPOTCMD\SPOTCMD\SPOTCMD\obj\Debug\SPOTCMD.csprojResolveAssemblyReference.cache
+C:\Users\James\Documents\code\SPOTCMD\SPOTCMD\SPOTCMD\obj\Debug\SPOTCMD.exe
+C:\Users\James\Documents\code\SPOTCMD\SPOTCMD\SPOTCMD\obj\Debug\SPOTCMD.pdb
