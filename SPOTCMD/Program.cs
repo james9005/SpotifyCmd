@@ -36,7 +36,8 @@ namespace SPOTCMD {
           int x = 0;
           while (x == 0) {
             String str = Console.ReadLine();
-            switch(str) {
+            #region switches for input
+            switch (str) {
               case "s":
                 _spotify.Skip();
                 Thread.Sleep(100);
@@ -49,14 +50,24 @@ namespace SPOTCMD {
                 Thread.Sleep(100);
                 break;
               case " ":
-                _spotify.Play();
+                if(_spotify.GetStatus().Playing) {
+                  _spotify.Pause();
+                  PausedSong(_spotify.GetStatus().Track); 
+                }
+                else if (!(_spotify.GetStatus().Playing)){
+                  _spotify.Play();
+                  DisplaySong(_spotify.GetStatus().Track);               
+                }
+                break;
+              case "st":
                 DisplaySong(_spotify.GetStatus().Track);
                 break;
               case "a":
                 _spotify.Pause();
                 x = 1;
                 break;
-            }   
+            }
+            #endregion
           }
         }
       }
@@ -64,12 +75,10 @@ namespace SPOTCMD {
       else {
         Console.WriteLine("ERROR: couldnt connect to spotify.");
       }
+    }
 
-      //Thread thread = new Thread(new ThreadStart(WorkThreadFunction));
-      //thread.Start();
-      //Console.WriteLine("This should be working now ");
-      //Console.ReadLine();
-
+    public static void PausedSong(Track song) {
+      Console.WriteLine("\nCurrently paused: {0} - {1} ({2})", song.TrackResource.Name, song.ArtistResource.Name, song.AlbumResource.Name);
     }
 
     public static void DisplaySong(Track song) {
