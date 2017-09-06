@@ -21,7 +21,7 @@ namespace SPOTCMD {
       Track _currentTrack;
       //make a connection with spotify
       _spotify = new SpotifyLocalAPI();
-
+     
       _spotify.OnPlayStateChange += _spotify_OnPlayStateChange;
       _spotify.OnTrackChange += _spotify_OnTrackChange;
 
